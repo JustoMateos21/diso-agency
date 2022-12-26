@@ -51,9 +51,9 @@ const NavBar = () => {
     windowDimension.width < 700 && setIsMenuOpen(!isMenuOpen);
   };
 
-  const borderAnimation = () => {
-    setAnimateBorder(!animateBorder);
-  };
+  // function borderAnimation() {
+  //   setAnimateBorder(!animateBorder);
+  // }
 
   const scrollPosition = useScrollPosition();
 
