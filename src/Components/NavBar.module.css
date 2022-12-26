@@ -1,0 +1,136 @@
+.nav {
+  width: 100%;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.navOpen {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(74, 69, 100);
+}
+
+.navLink {
+  display: flex;
+  height: 20%;
+}
+
+.hidden {
+  display: none;
+}
+
+.linksList {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navLink {
+  font-size: 2em;
+  display: flex;
+  margin-top: 90px;
+}
+
+.navLink:hover {
+  cursor: pointer;
+}
+
+.border {
+  height: 1px;
+  background-color: #85d982;
+  margin-top: 15px;
+  box-sizing: content-box;
+  animation-name: borderAnimation;
+  animation-duration: 0.8s;
+}
+
+@keyframes borderAnimation {
+  0% {
+    height: 1px;
+    width: 0%;
+  }
+  50% {
+    height: 1px;
+    width: 50%;
+  }
+  75% {
+    height: 1px;
+    width: 25%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.linkElement {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.btn {
+  margin-right: 50px;
+}
+
+.contactLink {
+  font-size: 1.5em;
+  display: flex;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #508094;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+
+.contactLink:hover {
+  cursor: pointer;
+  font-size: 1.55em;
+}
+
+.navOnScroll {
+  width: 100%;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  transition: 1s;
+  background-color: rgb(74, 69, 100);
+}
+
+@media (min-width: 800px) {
+  .btn {
+    display: none;
+  }
+
+  .linksList {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 10%;
+  }
+  .navLink {
+    margin-top: 0;
+    padding-right: 50px;
+    font-size: 1.5em;
+    transition: 0.5s;
+  }
+  .navLink:hover {
+    font-size: 1.6em;
+  }
+  .border {
+    display: none;
+  }
+
+  .nav {
+    position: fixed;
+  }
+}

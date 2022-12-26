@@ -1,0 +1,53 @@
+.step {
+  font-size: 2em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.imageIcon {
+  display: flex;
+  height: 87px;
+  width: 87px;
+  border-radius: 50%;
+}
+
+.stepContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  border-bottom: 10px solid #356161;
+}
+
+.stepNumber {
+  color: #f1f1f1;
+  font-weight: 500;
+  font-size: 6em;
+}
+
+.text {
+  margin-top: -20px;
+  text-align: center;
+  color: #f1f1f1;
+  font-size: 2em;
+}
+
+@media (min-width: 800px) {
+  .stepContainer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .stepNumber {
+    font-size: 8em;
+  }
+
+  .text {
+    margin-top: 0;
+  }
+}
