@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
 import styles from "./Home.module.css";
-import polygon from "../assets/Polygon1.png";
 const Home = () => {
   return (
     <div name="Home" className={styles.homeContainer}>

@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Step.module.css";
-import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
 const Step = ({ step, imageUrl, text }) => {
   return (
