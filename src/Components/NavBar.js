@@ -26,7 +26,7 @@ const links = [
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [animateBorder, setAnimateBorder] = useState(false);
+  // const [animateBorder, setAnimateBorder] = useState(false);
   const [windowDimension, setWindowDimension] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -99,9 +99,7 @@ const NavBar = () => {
               >
                 {link === "HowWeWork" ? "How We Work" : link}
               </Link>
-              <div
-                className={animateBorder ? styles.hidden : styles.border}
-              ></div>
+              <div className={styles.border}></div>
             </div>
           ))}
         </ul>
@@ -121,9 +119,7 @@ const NavBar = () => {
                 {link === "HowWeWork" ? "How We Work" : link}
               </Link>
 
-              <div
-                className={animateBorder ? styles.hidden : styles.border}
-              ></div>
+              <div className={styles.border}></div>
             </div>
           ))}
           <Link
